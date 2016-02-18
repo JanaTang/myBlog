@@ -1,0 +1,92 @@
+table { border-collapse:collapse; border-spacing:0; }
+fieldset, img { border:0; }
+address, caption, cite, code, dfn, em, th, var, optgroup { font-style:inherit; font-family:"microsoft YaHei";font-weight:inherit; }
+del, ins { text-decoration:none; }
+caption, th { text-align:left; }
+q:before, q:after { content:''; }
+abbr, acronym { border:0; font-variant:normal; }
+sup { vertical-align:baseline; }
+sub { vertical-align:baseline; }
+legend { color:#000; }
+input, button, textarea, select, optgroup, option { font-family:inherit; font-size:inherit; font-style:inherit; font-weight:inherit; }
+input, button, textarea, select { *font-size:100%;}
+p,span,b,em,i,s,u{font-weight: normal;font-size: 14px;font-style: normal;text-decoration: none;}
+a {color:#2076b2;text-decoration: none; }
+a:hover { text-decoration:none;}
+li{list-style-type:none;}
+
+
+body{
+    font-family: microsoft YaHei;
+    font-size:14px;
+    width: 1000px;
+    height:1200px;
+    margin: auto;
+    background-image: url(/images/back-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header{
+    overflow:hidden;
+    width:1000px;
+    h1{
+        color:#666;
+        font-size:30px;
+    }
+    .menu{
+        position: relative;
+        margin: auto;
+        height: 45px;
+        background-color: #e5f3c8;
+        li{
+            float:left;
+            padding-left:10px;
+            padding-right:10px;
+            a{
+                text-decoration: none;
+                font-family: 微软雅黑;
+                color: #7b7554;
+                font-size: 16px;
+                line-height:44px;
+            }
+            &.cur-tab{
+                background-color: #b1cb33;
+                height: 51px;
+                margin-top:-6px;
+                position:relative;
+                a{
+                    color:#fff;
+                    line-height:55px;
+                }
+            }
+        }
+        .cur-tab:after, .cur-tab:before {
+            bottom: 100%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            transform: rotate(90deg); //旋转90度
+        }
+        .cur-tab:before {
+            border-color: rgba(194, 225, 245, 0);
+            border-bottom-color: #b1cb33;
+            border-width: 11px;
+            right: -21px;
+            top: 0px;
+        }
+        .cur-tab:after {
+            border-color: #e5f3c8;
+            border-width: 8px;
+            right: -16px;
+            top: 6px;
+        }
+    }
+}
+.content{
+    width:1000px;
+    height:800px;
+    background-color:#fff;
+}
