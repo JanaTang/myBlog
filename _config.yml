@@ -1,8 +1,7 @@
 
 safe:        false
 auto:        false
-server:      http://janatang.github.io/myblog
-baseurl:    /
+server:      http://janatang.github.io
 
 source:      .
 destination: ./_site
