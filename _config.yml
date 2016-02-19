@@ -35,7 +35,7 @@ incremental: false
 # Serving
 detach:  false
 port:    4000
-host:   http://janatang.github.io
+host:    127.0.0.1
 baseurl: /myblog # does not include hostname
 
 # Outputting
