@@ -10,7 +10,7 @@ layout: default
   <ul class="arc-list">
     {% for post in category.last %}
     <li>{{ post.date | date:"%Y-%M-%d"}}
-      <a href="./{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
   </ul>
