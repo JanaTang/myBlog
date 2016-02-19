@@ -1,70 +1,62 @@
-# Where things are
-source:       .
-destination:  ./_site
-plugins_dir:  ./_plugins
-layouts_dir:  ./_layouts
-data_dir:     ./_data
-includes_dir: ./_includes
-collections:  null
 
-# Handling Reading
-safe:         false
-include:      [".htaccess"]
-exclude:      []
-keep_files:   [".git", ".svn"]
-encoding:     "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+permalink: /:year/:month/:day/:title
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+highlighter: pygments
 
-# Filtering Content
-show_drafts: null
-limit_posts: 0
-future:      false
-unpublished: false
 
-# Plugins
-whitelist: []
-gems:      []
+safe: false
 
-# Conversion
-markdown:    kramdown
-highlighter: rouge
-lsi:         false
-excerpt_separator: "\n\n"
-incremental: false
+title : yuandaima
+tagline: Site Tagline
+author :
+  name : yuandaima
+  email : yuxiaole@mucfc.com
+  github : yuxiaole
+  twitter : username
+  feedburner : feedname
 
-# Serving
-detach:  false
-port:    4000
-host:    127.0.0.1
-baseurl: /myblog # does not include hostname
+production_url : http://JanaTang.github.io/myblog
 
-# Outputting
-permalink:     date
-paginate_path: /page:num
-timezone:      null
+JB :
+  version : 0.3.0
 
-quiet:    false
-defaults: []
+  BASE_PATH : /myblog
 
-# Markdown Processors
-rdiscount:
-  extensions: []
+  ASSET_PATH : False
 
-redcarpet:
-  extensions: []
 
-kramdown:
-  auto_ids:       true
-  footnote_nr:    1
-  entity_output:  as_char
-  toc_levels:     1..6
-  smart_quotes:   lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+  archive_path: /archive.html
+  categories_path : /categories.html
+  tags_path : /tags.html
+  atom_path : /atom.xml
+  rss_path : /rss.xml
 
-  coderay:
-    coderay_wrap:              div
-    coderay_line_numbers:      inline
-    coderay_line_number_start: 1
-    coderay_tab_width:         4
-    coderay_bold_every:        10
-    coderay_css:               style
+  comments :
+    provider : disqus
+    disqus :
+      short_name : jekyllbootstrap
+    livefyre :
+      site_id : 123
+    intensedebate :
+      account : 123abc
+    facebook :
+      appid : 123
+      num_posts: 5
+      width: 580
+      colorscheme: light
+
+  analytics :
+    provider : google
+    google :
+        tracking_id : 'UA-50637568-1'
+    getclicky :
+      site_id :
+    mixpanel :
+        token : '_MIXPANEL_TOKEN_'
+    piwik :
+        baseURL : 'myserver.tld/piwik' # Piwik installation address (without protocol)
+        idsite : '1'                   # the id of the site on Piwik
+
+
+  sharing :
+    provider : false
