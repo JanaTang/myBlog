@@ -1,38 +1,12 @@
 
-safe:        false
-auto:        false
-server:      http://janatang.github.io
 
-source:      .
-destination: ./_site
-plugins:     ./_plugins
-
-future:      true
-lsi:         false
-
-permalink:   date
-
-maruku:
-  use_tex:    false
-  use_divs:   false
-  png_engine: blahtex
-  png_dir:    images/latex
-  png_url:    /images/latex
-
-rdiscount:
-  extensions: []
-
-kramdown:
-  auto_ids: true,
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
-
-  coderay:
-    coderay_wrap: div
-    coderay_line_numbers: inline
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: style
+encoding: utf-8
+name: Your New Jekyll Site
+markdown: redcarpet
+pygments: true
+baseurl: /
+url: /
+gems: [jekyll-paginate]
+relative_permalinks: false
+paginate: 6
+paginate_path: "/blogindex/page:num/"
